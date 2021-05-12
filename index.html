@@ -6,219 +6,379 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.local.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>W1 Smart Home</title>
+    <title>W1 Lifestyle</title>
     <script src="script.js"></script>
   </head>
-  <html>
-    <div class="hotspot-container">
-      <div id="scene" class="HS__Wrapper">
-        <!---------------- Background Image -------------------->
-        <picture>
-          <source
-            media="(min-width:769px)"
-            srcset="./media/w1m_assets/lifestyle/running-forest.jpg"
-          />
-          <img
-            class="img-fluid"
-            src="./media/w1m_assets/lifestyle/running-forest-mobile.jpg"
-            alt="collection of devices"
-          />
-        </picture>
-        <!---------------- Background Image End -------------------->
-
-        <!---------------- Image Hotspot ------------------->
-        <div class="HS__Modal">
-
-          <!---------------- Parrallax Objects (Drones) -------------------->
-          <div class="parallax-objects">
-            <!-- <div class="layer"></div> Make it empty, this is for background -->
-            
-            <div class="layer" data-depth="0.3">
-              <img id="drone1" src="./media/w1m_assets/lifestyle/drone1.png" />
-
-              <!------------ HotSpot Input 1  Start (Drone 1)------------>
-              <div class="HS__Modal__Input">
-                <input
-                  type="checkbox"
-                  id="H1"
-                  name="HotSpot"
-                  class="HS__Input"
-                  style="left: 38%; top: 42%"
-                />
-                <label
-                  for="H1"
-                  class="HS__Label"
-                  style="left:38%; top: 42%"
-                ></label>
-                <label for="H1" class="HS__Overlay"></label>
-                <!------------ Content Start ------------>
-                <div class="HS__Modal__Content" style="left: 40%; top: 35%">
-                  <div class="Content__Wrapper">
-                    <label for="H1" class="HS__Close"></label>
-                    <h3 class="HS__Title">Drone 1</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                      pariatur laudantium deserunt minima delectus illum dolor!
-                    </p>
-                    <br />
-                    <a
-                      href="#"
-                      class="
-                        wp-button
-                        wp-button-border
-                        wp-button-rounded
-                        wp-button-reveal
-                        wp-button-large
-                        tright
-                      "
-                      ><i class="icon-angle-right"></i><span>Explore</span></a
-                    >
-                  </div>
-                </div>
-                <!------------ Content End -------------->
-              </div>
-              <!------------ HotSpot Input End -------------->
-            </div>
-
-            <div class="layer" data-depth="-0.4">
-              <img id="drone2" src="./media/w1m_assets/lifestyle/drone2.png" />
-            
-              <!------------ HotSpot Input 2  Start (Drone 2)------------>
-              <div class="HS__Modal__Input">
-                <input
-                  type="checkbox"
-                  id="H2"
-                  name="HotSpot"
-                  class="HS__Input"
-                  style="left: 80%; top: 60%"
-                />
-                <label
-                  for="H2"
-                  class="HS__Label"
-                  style="left: 80%; top: 60%"
-                ></label>
-                <label for="H2" class="HS__Overlay"></label>
-                <!------------ Content Start ------------>
-                <div class="HS__Modal__Content" style="right: 22%; top: 53%">
-                  <div class="Content__Wrapper">
-                    <label for="H2" class="HS__Close"></label>
-                    <h3 class="HS__Title">Drone 2</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                      pariatur laudantium deserunt minima delectus illum dolor!
-                    </p>
-                    <br />
-                    <a
-                      href="#"
-                      class="
-                        wp-button
-                        wp-button-border
-                        wp-button-rounded
-                        wp-button-reveal
-                        wp-button-large
-                        tright
-                      "
-                      ><i class="icon-angle-right"></i><span>Explore</span></a
-                    >
-                  </div>
-                </div>
-                <!------------ Content End -------------->
-              </div>
-              <!------------ HotSpot Input End -------------->
-            </div>
-
-          </div>
-          <!---------------- Parallax Objects End -------------------->
-
-        
-     
-          <!------------ HotSpot Input 3  Start (Wireless Earphone)------------>
-          <div class="HS__Modal__Input">
-            <input
-              type="checkbox"
-              id="H3"
-              name="HotSpot"
-              class="HS__Input"
-              style="left: 40%; top: 38%"
+  <body>
+    <div class="row">
+      <div class="hotspot-container col-6 col-md-6">
+        <div id="scene" class="HS__Wrapper">
+          <!---------------- Background Image -------------------->
+          <picture>
+            <source
+              media="(min-width:769px)"
+              srcset="./media/w1m_assets/lifestyle/lifestyle-main.png"
             />
-            <label
-              for="H3"
-              class="HS__Label"
-              style="left: 40%; top: 38%"
-            ></label>
-            <label for="H3" class="HS__Overlay"></label>
-            <!------------ Content Start ------------>
-            <div class="HS__Modal__Content" style="left: 42%; top: 31%">
-              <div class="Content__Wrapper">
-                <label for="H3" class="HS__Close"></label>
-                <h3 class="HS__Title">Wireless Earphone</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                  pariatur laudantium deserunt minima delectus illum dolor!
-                </p>
-                <br />
-                <a
-                  href="#"
-                  class="
-                    wp-button
-                    wp-button-border
-                    wp-button-rounded
-                    wp-button-reveal
-                    wp-button-large
-                    tright
-                  "
-                  ><i class="icon-angle-right"></i><span>Explore</span></a
-                >
-              </div>
-            </div>
-            <!------------ Content End -------------->
-          </div>
-          <!------------ HotSpot Input End -------------->
-
-          <!------------ HotSpot Input 4 Start (Smart Watches) ------------>
-          <div class="HS__Modal__Input">
-            <input
-              type="checkbox"
-              id="H4"
-              name="HotSpot"
-              class="HS__Input"
-              style="left: 49%; top: 70%"
+            <img
+              class="img-fluid"
+              src="./media/w1m_assets/lifestyle/lifestyle-mobile.png"
+              alt="collection of devices"
             />
-            <label
-              for="H4"
-              class="HS__Label"
-              style="left: 49%; top: 70%"
-            ></label>
-            <label for="H4" class="HS__Overlay"></label>
-            <!------------ Content Start ------------>
-            <div class="HS__Modal__Content" style="left: 51%; top: 63%">
-              <div class="Content__Wrapper">
-                <label for="H4" class="HS__Close"></label>
-                <h3 class="HS__Title">Smart Watches</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                  pariatur laudantium deserunt minima delectus illum dolor!
-                </p>
-                <br />
-                <a
-                  href="#"
-                  class="
-                    wp-button
-                    wp-button-border
-                    wp-button-rounded
-                    wp-button-reveal
-                    wp-button-large
-                    tright
-                  "
-                  ><i class="icon-angle-right"></i><span>Explore</span></a
-                >
+          </picture>
+          <!---------------- Background Image End -------------------->
+
+          <!---------------- Image Hotspot ------------------->
+          <div class="HS__Modal">
+            <!---------------- Parrallax Objects (Drones) -------------------->
+            <div class="parallax-objects">
+              <div class="layer"></div>
+              <!-- Make it empty, this is for background -->
+
+              <div class="layer" data-depth="0.3">
+                <picture>
+                  <source
+                    media="(min-width:769px)"
+                    srcset="./media/w1m_assets/lifestyle/drone1.png"
+                  />
+                  <img
+                    id="drone1"
+                    src="./media/w1m_assets/lifestyle/drone1-mobile.png"
+                    alt="drone"
+                  />
+                </picture>
+                <!------------ HotSpot Input 1  Start (Drone 1)------------>
+                <div class="HS__Modal__Input">
+                  <input
+                    type="checkbox"
+                    id="H1"
+                    name="HotSpot"
+                    class="HS__Input"
+                    style="left: 65%; top: 40%"
+                  />
+                  <label
+                    for="H1"
+                    class="HS__Label"
+                    style="left: 65%; top: 40%"
+                  ></label>
+                  <label for="H1" class="HS__Overlay"></label>
+                  <!------------ Content Start ------------>
+                  <div class="HS__Modal__Content" style="left: 67%; top: 33%">
+                    <div class="Content__Wrapper">
+                      <label for="H1" class="HS__Close"></label>
+                      <h3 class="HS__Title">DJI Mavic Mini Drone</h3>
+                      <p>
+                        The compact yet powerful Mavic Mini is the perfect
+                        creative companion, capturing your moments in a way that
+                        effortlessly elevates the ordinary.
+                      </p>
+                      <br />
+                      <a
+                        href="https://www.wireless1.com.au/dji-phantom-4-rtk"
+                        class="
+                          wp-button
+                          wp-button-border
+                          wp-button-rounded
+                          wp-button-reveal
+                          wp-button-large
+                          tright
+                        "
+                        ><i class="icon-angle-right"></i><span>Explore</span></a
+                      >
+                    </div>
+                  </div>
+                  <!------------ Content End -------------->
+                </div>
+                <!------------ HotSpot Input End -------------->
               </div>
             </div>
-            <!------------ Content End -------------->
+            <!---------------- Parallax Objects End -------------------->
+
+            <!------------ HotSpot Input 2  Start (Smart Watch)------------>
+            <div class="HS__Modal__Input">
+              <input
+                type="checkbox"
+                id="H2"
+                name="HotSpot"
+                class="HS__Input"
+                style="left: 7%; top: 45%"
+              />
+              <label
+                for="H2"
+                class="HS__Label"
+                style="left: 7%; top: 45%"
+              ></label>
+              <label for="H2" class="HS__Overlay"></label>
+              <!------------ Content Start ------------>
+              <div class="HS__Modal__Content" style="left: 9%; top: 38%">
+                <div class="Content__Wrapper">
+                  <label for="H2" class="HS__Close"></label>
+                  <h3 class="HS__Title">Smart Watch</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Doloremque debitis id asperiores quos similique itaque?
+                  </p>
+                  <br />
+                  <a
+                    href="https://www.wireless1.com.au/dji-mavic-mini-drone"
+                    class="
+                      wp-button
+                      wp-button-border
+                      wp-button-rounded
+                      wp-button-reveal
+                      wp-button-large
+                      tright
+                    "
+                    ><i class="icon-angle-right"></i><span>Explore</span></a
+                  >
+                </div>
+              </div>
+              <!------------ Content End -------------->
+            </div>
+            <!------------ HotSpot Input End -------------->
+
+            <!------------ HotSpot Input 3  Start (Wireless Speaker)------------>
+            <div class="HS__Modal__Input">
+              <input
+                type="checkbox"
+                id="H3"
+                name="HotSpot"
+                class="HS__Input"
+                style="left: 38%; top: 50%"
+              />
+              <label
+                for="H3"
+                class="HS__Label"
+                style="left: 38%; top: 50%"
+              ></label>
+              <label for="H3" class="HS__Overlay"></label>
+              <!------------ Content Start ------------>
+              <div class="HS__Modal__Content" style="left: 40%; top: 43%">
+                <div class="Content__Wrapper">
+                  <label for="H3" class="HS__Close"></label>
+                  <h3 class="HS__Title">Wireless Speaker</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quia pariatur laudantium deserunt minima delectus illum
+                    dolor!
+                  </p>
+                  <br />
+                  <a
+                    href="https://www.wireless1.com.au/audio/earphones/wireless-earphones"
+                    class="
+                      wp-button
+                      wp-button-border
+                      wp-button-rounded
+                      wp-button-reveal
+                      wp-button-large
+                      tright
+                    "
+                    ><i class="icon-angle-right"></i><span>Explore</span></a
+                  >
+                </div>
+              </div>
+              <!------------ Content End -------------->
+            </div>
+            <!------------ HotSpot Input End -------------->
+
+            <!------------ HotSpot Input 4 Start (Wireless Earphone) ------------>
+            <div class="HS__Modal__Input">
+              <input
+                type="checkbox"
+                id="H4"
+                name="HotSpot"
+                class="HS__Input"
+                style="left: 92%; top: 39%"
+              />
+              <label
+                for="H4"
+                class="HS__Label"
+                style="left: 92%; top: 39%"
+              ></label>
+              <label for="H4" class="HS__Overlay"></label>
+              <!------------ Content Start ------------>
+              <div class="HS__Modal__Content" style="right: 10%; top: 32%">
+                <div class="Content__Wrapper">
+                  <label for="H4" class="HS__Close"></label>
+                  <h3 class="HS__Title">Headphone</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quia pariatur laudantium deserunt minima delectus illum
+                    dolor!
+                  </p>
+                  <br />
+                  <a
+                    href="https://www.wireless1.com.au/wearables"
+                    class="
+                      wp-button
+                      wp-button-border
+                      wp-button-rounded
+                      wp-button-reveal
+                      wp-button-large
+                      tright
+                    "
+                    ><i class="icon-angle-right"></i><span>Explore</span></a
+                  >
+                </div>
+              </div>
+              <!------------ Content End -------------->
+            </div>
+            <!------------ HotSpot Input End -------------->
           </div>
-          <!------------ HotSpot Input End -------------->
+          <!------------ Image Hotspot End -------------->
         </div>
-        <!------------ Image Hotspot End -------------->
+      </div>
+
+      <div class="hotspot-container col-6 col-md-6">
+        <div id="scene" class="HS__Wrapper">
+          <!---------------- Background Image -------------------->
+          <picture>
+            <source
+              media="(min-width:769px)"
+              srcset="./media/w1m_assets/lifestyle/lifestyle-main.png"
+            />
+            <img
+              class="img-fluid"
+              src="./media/w1m_assets/lifestyle/lifestyle-mobile.png"
+              alt="collection of devices"
+            />
+          </picture>
+          <!---------------- Background Image End -------------------->
+
+          <!---------------- Image Hotspot ------------------->
+          <div class="HS__Modal">
+            <!------------ HotSpot Input 2  Start (Smart Watch)------------>
+            <div class="HS__Modal__Input">
+              <input
+                type="checkbox"
+                id="H2"
+                name="HotSpot"
+                class="HS__Input"
+                style="left: 7%; top: 45%"
+              />
+              <label
+                for="H2"
+                class="HS__Label"
+                style="left: 7%; top: 45%"
+              ></label>
+              <label for="H2" class="HS__Overlay"></label>
+              <!------------ Content Start ------------>
+              <div class="HS__Modal__Content" style="left: 9%; top: 38%">
+                <div class="Content__Wrapper">
+                  <label for="H2" class="HS__Close"></label>
+                  <h3 class="HS__Title">Smart Watch</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Doloremque debitis id asperiores quos similique itaque?
+                  </p>
+                  <br />
+                  <a
+                    href="https://www.wireless1.com.au/dji-mavic-mini-drone"
+                    class="
+                      wp-button
+                      wp-button-border
+                      wp-button-rounded
+                      wp-button-reveal
+                      wp-button-large
+                      tright
+                    "
+                    ><i class="icon-angle-right"></i><span>Explore</span></a
+                  >
+                </div>
+              </div>
+              <!------------ Content End -------------->
+            </div>
+            <!------------ HotSpot Input End -------------->
+
+            <!------------ HotSpot Input 3  Start (Wireless Speaker)------------>
+            <div class="HS__Modal__Input">
+              <input
+                type="checkbox"
+                id="H3"
+                name="HotSpot"
+                class="HS__Input"
+                style="left: 38%; top: 50%"
+              />
+              <label
+                for="H3"
+                class="HS__Label"
+                style="left: 38%; top: 50%"
+              ></label>
+              <label for="H3" class="HS__Overlay"></label>
+              <!------------ Content Start ------------>
+              <div class="HS__Modal__Content" style="left: 40%; top: 43%">
+                <div class="Content__Wrapper">
+                  <label for="H3" class="HS__Close"></label>
+                  <h3 class="HS__Title">Wireless Speaker</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quia pariatur laudantium deserunt minima delectus illum
+                    dolor!
+                  </p>
+                  <br />
+                  <a
+                    href="https://www.wireless1.com.au/audio/earphones/wireless-earphones"
+                    class="
+                      wp-button
+                      wp-button-border
+                      wp-button-rounded
+                      wp-button-reveal
+                      wp-button-large
+                      tright
+                    "
+                    ><i class="icon-angle-right"></i><span>Explore</span></a
+                  >
+                </div>
+              </div>
+              <!------------ Content End -------------->
+            </div>
+            <!------------ HotSpot Input End -------------->
+
+            <!------------ HotSpot Input 4 Start (Wireless Earphone) ------------>
+            <div class="HS__Modal__Input">
+              <input
+                type="checkbox"
+                id="H4"
+                name="HotSpot"
+                class="HS__Input"
+                style="left: 92%; top: 39%"
+              />
+              <label
+                for="H4"
+                class="HS__Label"
+                style="left: 92%; top: 39%"
+              ></label>
+              <label for="H4" class="HS__Overlay"></label>
+              <!------------ Content Start ------------>
+              <div class="HS__Modal__Content" style="right: 10%; top: 32%">
+                <div class="Content__Wrapper">
+                  <label for="H4" class="HS__Close"></label>
+                  <h3 class="HS__Title">Headphone</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quia pariatur laudantium deserunt minima delectus illum
+                    dolor!
+                  </p>
+                  <br />
+                  <a
+                    href="https://www.wireless1.com.au/wearables"
+                    class="
+                      wp-button
+                      wp-button-border
+                      wp-button-rounded
+                      wp-button-reveal
+                      wp-button-large
+                      tright
+                    "
+                    ><i class="icon-angle-right"></i><span>Explore</span></a
+                  >
+                </div>
+              </div>
+              <!------------ Content End -------------->
+            </div>
+            <!------------ HotSpot Input End -------------->
+          </div>
+          <!------------ Image Hotspot End -------------->
+        </div>
       </div>
     </div>
 
